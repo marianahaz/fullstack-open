@@ -1,0 +1,16 @@
+title 0.6: New Note - Single Page App
+
+browser->server: HTTP POST /new_note_spa
+note left of browser:
+POST contains the json
+object of the new note,
+with a Content-Type of
+application/json
+end note
+
+server-->browser: status 201
+
+note left of browser:
+javascript prevents default
+and rerenders the notes list
+end note

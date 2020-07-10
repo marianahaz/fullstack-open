@@ -1,0 +1,15 @@
+title 0.4: New Note
+
+browser->server: user input: HTTP POST /new-note
+note left of server:
+Server responds with
+a status of 302
+end note
+
+server--> browser: url redirect: causes a reload
+browser->server: HTTP GET main.css
+server-->browser: main.css
+browser->server: HTTP GET main.js
+server-->browser: main.js
+browser->server: HTTP GET data.json
+server-->browser: data.json content
